@@ -8,6 +8,11 @@
 </head>
 <body>
     <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -46,5 +51,22 @@
             <button type="submit">Enviar</button>
         </div>
     </form>
+
+    <footer>
+        <p>&copy; 2025 - mehX.Tech | AndrezeraDev</p>
+        <div class="social-medias">
+            <p>Acompanhe a gente também no instagram!</p>
+            <div class="images">
+                <img src="./assets/instagram_4138124.png" alt="instagram logo">
+                <img src="./assets/github_5968896.png" alt="git hub logo">
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav ul');
+            nav.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>

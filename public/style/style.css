@@ -1,0 +1,92 @@
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #000000;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(to bottom, #1e1e1e, #000000);
+}
+
+header nav {
+    display: flex;
+    gap: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #ffdf61;
+
+}
+
+.account-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+
+.account-container a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.intro h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+}
+
+
+.backGroundPersonalizado {
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;;
+    color: rgb(185, 102, 102);
+    padding: 20px 10%;
+    transition: all 0.3s ease-in-out;
+}

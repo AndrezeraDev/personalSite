@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
 * { box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -20,7 +23,6 @@ header {
 }
 
 header:hover {
-    transition: all 0.3s ease-in-out;
     background: linear-gradient(to bottom, #1e1e1e, #000000);
 }
 
@@ -74,10 +76,19 @@ header nav ul li a:hover {
 
 
 .intro h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     margin-top: 10%;
     color: white;
+    font-family: "Atkinson Hyperlegible", serif;
+}
+
+.intro p {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    font-family: "Exo 2", serif;
+    margin-bottom: 50vh;
 }
 
 
@@ -89,4 +100,85 @@ header nav ul li a:hover {
     color: rgb(185, 102, 102);
     padding: 20px 10%;
     transition: all 0.3s ease-in-out;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    margin-top: 16%;
+}
+
+.content p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 6%;
+    color: white;
+    font-family: "Exo 2", serif;
+}
+
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    margin-top: 16%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    margin-bottom: 25%;
+}
+
+.form-container h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffdf61;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-container button:hover {
+    background-color: #333;
+    color: #ffdf61;
+    border-radius: 25px;
+}
+
+.form-container label {
+    color: rgb(177, 177, 177);
+    margin: 15px;
+    margin-bottom: 0;
+    width: 100%;
 }

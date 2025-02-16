@@ -238,6 +238,19 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    color: rgba(179, 179, 179, 0.344);
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    background-color: #333;
+}
+
+
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -260,6 +273,14 @@ footer {
     .account-container {
         flex-direction: column;
         margin-top: 10px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 2rem;
     }
 }
 

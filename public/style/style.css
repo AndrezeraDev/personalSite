@@ -10,6 +10,7 @@
 body {
     background-color: #000000;
     transition: all 0.3s ease-in-out;
+    overflow-x: hidden;
 }
 
 header {
@@ -138,7 +139,7 @@ header nav ul li a:hover {
     padding: 20px 5%;
     background-color: #1b1b1b;
     border-radius: 20px;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 .form-container h2 {
@@ -252,15 +253,27 @@ footer {
 
 
 @media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
     header nav ul {
         flex-direction: column;
         position: absolute;
         top: 60px;
         left: -100%;
-        width: 100%;
+        width: 90%;
         background-color: #000000;
         transition: all 0.3s ease-in-out;
     }
+
+    .content,
+    .cadastro-form,
+    .form-container,
+    footer {
+        padding: 20px 5%;
+    }
+
 
     header nav ul.show {
         left: 0;
@@ -281,7 +294,18 @@ footer {
 
     .intro p {
         font-size: 2rem;
+        width: 100%;
     }
+
+    .cadastro-form {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+
 }
 
 

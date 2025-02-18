@@ -63,10 +63,18 @@
         </div>
     </footer>
     <script>
-        function toggleMenu() {
-            const nav = document.querySelector('header nav ul');
-            nav.classList.toggle('show');
+    function toggleMenu() {
+        const nav = document.querySelector('header nav ul');
+        nav.classList.toggle('show');
+
+        // Ajusta a altura para ativar a animação de deslizamento
+        if (nav.classList.contains('show')) {
+            nav.style.maxHeight = nav.scrollHeight + "px";
+        } else {
+            nav.style.maxHeight = null;
         }
+    }
+
     </script>
 </body>
 </html>

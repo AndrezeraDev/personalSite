@@ -92,6 +92,18 @@ header nav ul li a:hover {
     margin-bottom: 50vh;
 }
 
+.intro h1, .intro p {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.intro h1.fade-in, .intro p.fade-in {
+    opacity: 1;
+}
+
+/*EFEITO DE FADE AO ROLAR A PÁGINA*/
+
+
 
 .backGroundPersonalizado {
     background: -webkit-linear-gradient(#eee, #333);
@@ -140,6 +152,7 @@ header nav ul li a:hover {
     background-color: #1b1b1b;
     border-radius: 20px;
     margin-bottom: 10%;
+    width: 50%;
 }
 
 .form-container h2 {
@@ -167,8 +180,15 @@ header nav ul li a:hover {
 }
 
 
-.form-container button {
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+}
+
+.form-container button {
+    width: 25%;
     padding: 10px;
     margin: 10px 0;
     border: none;

@@ -48,7 +48,10 @@
             <input type="email" name="email" id="email" placeholder="Digite seu email">
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-            <button type="submit">Enviar</button>
+            <div class="button-container">
+                <button type="submit">Cadastrar</button>
+            </div>
+            
         </div>
     </form>
 
@@ -57,24 +60,15 @@
         <div class="social-medias">
             <p>Acompanhe a gente também no instagram!</p>
             <div class="images">
-                <img src="./assets/instagram_4138124.png" alt="instagram logo" href="https://www.instagram.com/nanoset25">
-                <img src="./assets/github_5968896.png" alt="git hub logo" href="https://github.com/AndrezeraDev">
+                <a href="https://www.instagram.com/nanoset25" target="_blank">
+                    <img src="./assets/instagram_4138124.png" alt="instagram logo">
+                </a>
+                <a href="https://github.com/AndrezeraDev" target="_blank">
+                    <img src="./assets/github_5968896.png" alt="git hub logo">
+                </a>
             </div>
         </div>
     </footer>
-    <script>
-    function toggleMenu() {
-        const nav = document.querySelector('header nav ul');
-        nav.classList.toggle('show');
-
-        // Ajusta a altura para ativar a animação de deslizamento
-        if (nav.classList.contains('show')) {
-            nav.style.maxHeight = nav.scrollHeight + "px";
-        } else {
-            nav.style.maxHeight = null;
-        }
-    }
-
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

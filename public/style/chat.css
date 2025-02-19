@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #000000;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+    background: linear-gradient(to bottom, #1e1e1e, #000000);
+}
+
+header nav {
+    display: flex;
+    gap: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #ffdf61;
+
+}
+
+.account-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+
+.account-container a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.intro h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+    font-family: "Atkinson Hyperlegible", serif;
+}
+
+.intro p {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    font-family: "Exo 2", serif;
+    margin-bottom: 50vh;
+}
+
+.intro h1, .intro p {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.intro h1.fade-in, .intro p.fade-in {
+    opacity: 1;
+}
+
+/*EFEITO DE FADE AO ROLAR A PÁGINA*/
+
+
+
+.backGroundPersonalizado {
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;;
+    color: rgb(185, 102, 102);
+    padding: 20px 10%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    margin-top: 16%;
+}
+
+.content p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 6%;
+    color: white;
+    font-family: "Exo 2", serif;
+}
+
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    margin-top: 12%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    width: 50%;
+}
+
+.form-container h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+
+.form-container input:focus {
+    background-color: #9d9d9d;
+    color: #333;
+    border-radius: 11px;
+    outline: none;
+
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form-container button {
+    width: 25%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffdf61;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-container button:hover {
+    background-color: #333;
+    color: #ffdf61;
+    border-radius: 25px;
+}
+
+.form-container label {
+    color: rgb(177, 177, 177);
+    margin: 15px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    color: rgba(179, 179, 179, 0.344);
+    transition: all 0.3s ease-in-out;
+}
+
+.social-medias {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-medias img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-medias img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    color: rgba(179, 179, 179, 0.344);
+    transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+    background-color: #000000;
+}
+
+
+/* Estilos para o container do chat */
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para a caixa de chat */
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+/* Estilos para cada mensagem no chat */
+.chat-box div {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #e1f5fe;
+}
+
+/* Estilos para o container de entrada */
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilos para a textarea */
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o botão de enviar */
+#send-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        overflow: hidden;
+        transform: translateY(-30px);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .content,
+    .cadastro-form,
+    .form-container,
+    footer {
+        padding: 20px 5%;
+    }
+
+
+    header nav ul.show {
+        max-height: 500px !important; /* Ajuste conforme a quantidade de itens no menu */
+        margin-top: 20px;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 4px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 20%;
+        padding: 2px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .account-container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .cadastro-form {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+
+}
+
+

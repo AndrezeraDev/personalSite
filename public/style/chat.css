@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 
 * { box-sizing: border-box;
     margin: 0;
@@ -11,6 +14,20 @@ body {
     background-color: #000000;
     transition: all 0.3s ease-in-out;
     overflow-x: hidden;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #000000;
 }
 
 header {
@@ -215,6 +232,21 @@ footer {
     background-color: #000000;
 }
 
+.chat-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+
+
 /* Estilos para cada mensagem no chat */
 .chat-box div {
     margin-bottom: 10px;
@@ -241,6 +273,21 @@ footer {
     background-color: #000000;
     color: #ddd;
 }
+
+#chat-input::-webkit-scrollbar {
+    width: 10px;
+}
+
+#chat-input::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+#chat-input::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+
 
 /* Estilos para o botão de enviar */
 #send-button {

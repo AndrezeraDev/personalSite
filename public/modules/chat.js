@@ -1,7 +1,7 @@
 document.getElementById('send-button').addEventListener('click', async function () {
     const chatInput = document.getElementById('chat-input');
     const chatBox = document.getElementById('chat-box');
-    const apiKey = 'COLOQUE AQUI A APIKEY'
+    const apiKey = ''
 
     if (chatInput.value.trim() !== '') {
         // Exibe a mensagem do usuário no chat
@@ -46,16 +46,18 @@ document.getElementById('send-button').addEventListener('click', async function 
 
             // Exibe a análise no chat
             const analysisMessage = document.createElement('div');
-            analysisMessage.textContent = "Análise: " + analysis.trim(); // Remove espaços em branco
+            analysisMessage.textContent = "| " + analysis.trim(); // Remove espaços em branco
             analysisMessage.style.color = 'white'; // Estilo para a análise
             analysisMessage.style.backgroundColor = '#181D28'; // Cor de fundo para a análise
+            analysisMessage.style.fontFamily = '"Tomorrow", serif'; // Fonte para a análise
             chatBox.appendChild(analysisMessage);
 
             // Exibe a resposta melhorada no chat
             const improvedResponseMessage = document.createElement('div');
-            improvedResponseMessage.textContent = "Resposta: " + improvedResponse.trim(); // Remove espaços em branco
-            improvedResponseMessage.style.color = 'green'; // Estilo para a resposta
+            improvedResponseMessage.textContent = "| " + improvedResponse.trim(); // Remove espaços em branco
+            improvedResponseMessage.style.color = '#7bce7b'; // Estilo para a resposta
             improvedResponseMessage.style.backgroundColor = '#181D28'; // Cor de fundo para a resposta
+            improvedResponseMessage.style.fontFamily = '"Tomorrow", serif'; // Fonte para a resposta
             chatBox.appendChild(improvedResponseMessage);
 
             // Limpa o campo de entrada

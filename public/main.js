@@ -28,4 +28,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const chatLink = document.querySelector('a[href="chat.html"]');
+
+    if (chatLink) {
+        chatLink.addEventListener("click", (event) => {
+            event.preventDefault(); // Impede a navegação padrão
+
+            const token = localStorage.getItem("token");
+
+            if (!token) {
+                alert("Você precisa estar logado para acessar o chat!");
+                window.location.href = "login.html";
+                return;
+            }
+
+            // Se houver um token, verifica se é válido chamando o backend
+            fetch("http://localhost:3000/chat", {
+                method: "GET",
+                headers: { Authorization: token }
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = "chat.html"; // Redireciona se estiver autorizado
+                } else {
+                    alert("Sessão expirada ou acesso negado. Faça login novamente.");
+                    localStorage.removeItem("token");
+                    window.location.href = "login.html";
+                }
+            })
+            .catch(() => {
+                alert("Erro ao verificar autenticação.");
+            });
+        });
+    }
+});
+
+
 
